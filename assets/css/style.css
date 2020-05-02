@@ -32,6 +32,10 @@ h2 {
   align-items: center;
 }
 
+.brand-logo {
+  text-align: center;
+}
+
 .light-header {
   background: var(--white-color);
 }
@@ -58,7 +62,7 @@ h2 {
 
 .light-header .nav-link {
   color: var(--brand-color-blue);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* Main Section Blue & Light */
