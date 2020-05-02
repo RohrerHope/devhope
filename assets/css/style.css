@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 :root {
@@ -14,9 +16,20 @@ body {
 }
 
 .blue {
+  -webkit-animation: fadeInBackgroundBlue ease 2s;
   animation: fadeInBackgroundBlue ease 2s;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+@-webkit-keyframes fadeInBackgroundBlue {
+  0% {
+    background: var(--black-color);
+  }
+  100% {
+    background: var(--brand-color-blue);
+  }
 }
 @keyframes fadeInBackgroundBlue {
   0% {
@@ -28,9 +41,20 @@ body {
 }
 
 .light {
+  -webkit-animation: fadeInBackgroundLight ease 2s;
   animation: fadeInBackgroundLight ease 2s;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+@-webkit-keyframes fadeInBackgroundLight {
+  0% {
+    background: var(--brand-color-blue);
+  }
+  100% {
+    background: var(--white-color);
+  }
 }
 @keyframes fadeInBackgroundLight {
   0% {
@@ -55,8 +79,14 @@ h2 {
 .light-header {
   z-index: 10;
   height: 13vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -90,8 +120,14 @@ h2 {
 .main-blue,
 .main-light {
   height: 87vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
 }
