@@ -14,11 +14,31 @@ body {
 }
 
 .blue {
-  background: var(--brand-color-blue);
+  animation: fadeInBackgroundBlue ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInBackgroundBlue {
+  0% {
+    background: var(--black-color);
+  }
+  100% {
+    background: var(--brand-color-blue);
+  }
 }
 
 .light {
-  background: var(--white-color);
+  animation: fadeInBackgroundLight ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInBackgroundLight {
+  0% {
+    background: var(--brand-color-blue);
+  }
+  100% {
+    background: var(--white-color);
+  }
 }
 
 h1 {
