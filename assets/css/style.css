@@ -103,8 +103,16 @@ h2 {
   color: var(--white-color);
 }
 
+.main-blue .contact i:hover {
+  color: var(--brand-color-yellow);
+}
+
 .main-light .contact {
   color: var(--brand-color-blue);
+}
+
+.main-light .contact i:hover {
+  color: var(--brand-color-green);
 }
 
 .text-yellow {
