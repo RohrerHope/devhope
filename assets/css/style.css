@@ -13,6 +13,8 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+/* Header Blue & Light */
+
 .blue-header,
 .light-header {
   z-index: 10;
@@ -49,4 +51,31 @@ body {
 .light-header .nav-link {
   color: var(--brand-color-blue);
   font-weight: 400;
+}
+
+/* Main Section Blue & Light */
+
+.main-blue,
+.main-light {
+  height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-blue {
+  background: var(--brand-color-blue);
+}
+
+.main-blue h1,
+.main-blue h2,
+.main-blue i {
+  color: var(--white-color);
+}
+
+.main-light h1,
+.main-light h2,
+.main-light i {
+  color: var(--brand-color-blue);
 }
