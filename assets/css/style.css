@@ -13,6 +13,14 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.blue {
+  background: var(--brand-color-blue);
+}
+
+.light {
+  background: var(--white-color);
+}
+
 h1 {
   font-size: 4.5rem;
 }
@@ -34,14 +42,6 @@ h2 {
 
 .brand-logo {
   text-align: center;
-}
-
-.light-header {
-  background: var(--white-color);
-}
-
-.blue-header {
-  background: var(--brand-color-blue);
 }
 
 .blue-header img,
@@ -74,10 +74,6 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.main-blue {
-  background: var(--brand-color-blue);
 }
 
 .main-blue h1,
