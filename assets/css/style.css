@@ -26,7 +26,7 @@ h2 {
 .blue-header,
 .light-header {
   z-index: 10;
-  height: 6rem;
+  height: 13vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +69,7 @@ h2 {
 
 .main-blue,
 .main-light {
-  height: 91vh;
+  height: 87vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +95,6 @@ h2 {
 .main-blue .contact,
 .main-light .contact {
   font-size: 2rem;
-  font-weight: 300;
   margin-top: 2rem;
 }
 
@@ -121,4 +120,26 @@ h2 {
 
 .text-green {
   color: var(--brand-color-green);
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .blue-header .nav-link,
+  .light-header .nav-link {
+    text-align: right;
+  }
+
+  .main-blue .contact,
+  .main-light .contact {
+    font-size: 1.5rem;
+  }
 }
