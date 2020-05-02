@@ -91,3 +91,18 @@ h2 {
 .main-light i {
   color: var(--brand-color-blue);
 }
+
+.main-blue .contact,
+.main-light .contact {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 2rem;
+}
+
+.main-blue .contact {
+  color: var(--white-color);
+}
+
+.main-light .contact {
+  color: var(--brand-color-blue);
+}
