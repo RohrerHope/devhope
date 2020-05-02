@@ -13,6 +13,14 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
 /* Header Blue & Light */
 
 .blue-header,
