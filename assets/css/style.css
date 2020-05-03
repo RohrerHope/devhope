@@ -78,7 +78,7 @@ h2 {
 .blue-header,
 .light-header {
   z-index: 10;
-  height: 13vh;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,11 +115,28 @@ h2 {
   font-weight: 300;
 }
 
+.blue-header {
+  animation: fadeInShadowLight ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 10;
+}
+
+@-webkit-keyframes fadeInShadowLight {
+  0% {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.3);
+  }
+}
+
 /* Main Section Blue & Light */
 
 .main-blue,
 .main-light {
-  height: 87vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
