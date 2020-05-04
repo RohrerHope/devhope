@@ -121,35 +121,69 @@ h2 {
 }
 
 .blue-header {
+  -webkit-animation: fadeInShadowLight ease 3s;
   animation: fadeInShadowLight ease 3s;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   z-index: 10;
 }
 
-@keyframes fadeInShadowLight {
+@-webkit-keyframes fadeInShadowLight {
   0% {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0);
   }
 
   100% {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.3);
+  }
+}
+
+@keyframes fadeInShadowLight {
+  0% {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.3);
     box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.3);
   }
 }
 
 .light-header {
+  -webkit-animation: fadeInShadowBlue ease 3s;
   animation: fadeInShadowBlue ease 3s;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   z-index: 10;
 }
 
-@keyframes fadeInShadowBlue {
+@-webkit-keyframes fadeInShadowBlue {
   0% {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 39, 118, 0);
     box-shadow: 0 5px 10px 0 rgba(0, 39, 118, 0);
   }
 
   100% {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 39, 118, 0.3);
+    box-shadow: 0 5px 10px 0 rgba(0, 39, 118, 0.3);
+  }
+}
+
+@keyframes fadeInShadowBlue {
+  0% {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 39, 118, 0);
+    box-shadow: 0 5px 10px 0 rgba(0, 39, 118, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 39, 118, 0.3);
     box-shadow: 0 5px 10px 0 rgba(0, 39, 118, 0.3);
   }
 }
@@ -194,11 +228,17 @@ h2 {
 }
 
 .main-blue .contact i {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .main-blue .contact i:hover {
   color: var(--brand-color-yellow);
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
   transform: scale(1.25);
 }
 
@@ -207,11 +247,17 @@ h2 {
 }
 
 .main-light .contact i {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .main-light .contact i:hover {
   color: var(--brand-color-green);
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
   transform: scale(1.25);
 }
 
